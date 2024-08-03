@@ -1,0 +1,60 @@
+day 3 of crew matrix : CANTEEN EXPENSE PROGRAM 
+
+IN C :
+#include<stdio.h>
+int main(){
+total_expense=0;
+int num_items;
+printf("Enter the no of items you purchased :");
+scanf("%d",&num_items);
+float cost;
+for(int i=o;i<num_items;i++){
+printf("Enter the cost of %d:",i+1);
+scanf("%f",&cost);
+}
+total_expenses += cost;
+printf("Your Total Expense is : %.2f\n",total_expense);
+return 0 ;
+}
+O/P: Enter the number of items you purchased: 3
+Enter the cost of item 1: 4.50
+Enter the cost of item 2: 2.75
+Enter the cost of item 3: 3.25
+Your total expense is: 10.50
+
+
+IN PYTHON:
+total_expense = 0
+num_items = int(input("Enter the no of items you purchased :")
+for i in range(num_items):
+cost = float(input(f"Enter the cost of item {i + 1}:"))
+total_expense += cost
+print(f"Your Total Expense is : Rs. {total_expense:.2f}")
+O/P:
+   Enter the number of items you purchased: 3
+   Enter the cost of item 1: 4.50
+   Enter the cost of item 2: 2.75
+   Enter the cost of item 3: 3.25
+   Your total expense is: Rs. 10.50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
