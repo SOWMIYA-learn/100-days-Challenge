@@ -1,0 +1,45 @@
+day 6 of crew matrix : sum - format Print Program
+
+IN C :
+#include<stdio.h<
+int main(){
+int num1,num2,sum;
+printf("Enter 1st no : ");
+scanf("%d",&num1);
+printf("Enter 2nd no : ");
+scanf("%d",&num2);
+sum = num1 + num2 ;
+printf("The Sum of %d and %d is :%d\n",num1,num2,sum);
+return 0 ;
+}
+O/P:
+Enter 1st no : 5
+Enter 2nd no : 3
+The Sum of 5 and 3 is : 8
+
+
+IN PYTHON :
+num1 = int(input("Enter 1st no : "))
+num2 = int(input("Enter 2nd no : "))
+sum = num1 + num2 
+print(f"The Sum of {num1} and {num2} is : {sum}")
+O/P:
+Enter 1st no : 5
+Enter 2nd no : 3
+The Sum of 5 and 3 is : 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
