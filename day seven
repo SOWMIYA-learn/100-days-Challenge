@@ -1,0 +1,35 @@
+day 7 of crew matrix : Square format Program 
+
+IN C :
+
+#include<stdio.h>
+int main(){
+int number , square ;
+printf("Enter an integer : ");
+scanf("%d",&number);
+square = number * number ;
+printf("The square of %d is : %d\n ", number , square);
+
+O/P:
+Enter an integer: 5
+The square of 5 is: 25
+
+
+IN PYTHON :
+ 
+num = int (input("Enter an integer: "))
+ square = num * num 
+ print(f"The square of {num} is {square}")
+
+O/P:
+Enter an integer: 5
+The square of 5 is 25
+
+
+
+
+
+
+
+
+
