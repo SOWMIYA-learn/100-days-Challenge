@@ -1,0 +1,43 @@
+day 9 of cre matrix : print 1 to 5 in words Program 
+
+IN C :
+#include<stdio.h>
+int main(){
+int i ;
+char *words[] = {"One","Two","Three","Four","Five"};
+for ( int i = 0 ; i < 5 ; i++ ){
+   printf( "%s\n",words[i]);
+  }
+return 0 ;
+}
+
+O/P:
+ One
+ Two
+ Three
+ Four
+ Five
+
+
+IN PYTHON :
+numbers = ["One","Two","Three","Four","Five"]
+for words in numbers :
+print(words)
+
+O/P:
+One
+Two
+Three
+Four
+Five
+
+
+
+
+
+
+
+
+
+
+
