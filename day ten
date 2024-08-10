@@ -1,0 +1,27 @@
+day 10 of crew matrix : string twice print program 
+
+IN C :
+#include<stdio.h>
+int main () {
+char str[100];
+printf("Enter a string : ");
+fgets(str,sizeof(str,stdin);\\ using gets for getting user inputs might be unsafe instead use fgets() to make your code more safer
+printf("First Print : \"%s"\n" , str );
+printf("Second Print : \"%s"\n" , str );
+return 0 ;
+}
+
+O/P:
+Enter a string: Hello, World!
+First Print: "Hello, World!"
+Second Print: "Hello, World!"
+
+IN PYTHON :
+user_input = input("Enter a string : ")
+print("First Print : " , user_input)
+print("Second Print : " , user_input)
+
+O\P:
+Enter a string: Where are you now !?
+First Print:  Where are you now !?
+Second Print:  Where are you now !?
