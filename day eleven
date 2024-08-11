@@ -1,0 +1,27 @@
+day 11 of crew matrix : Minutes to seconds program :
+
+IN C :
+#include<stdio.h>
+int main() {
+int minutes , seconds ;
+printf("Enter the no of minutes : ");
+scanf("%d",&minutes );
+seconds = minutes * 60 ;
+printf("%d minutes is equal to %d seconds.",minutes , seconds );
+return 0 ;
+}
+
+O\P :
+Enter the no of minutes : 5
+5 minutes is equal to 300 seconds.
+
+
+IN PYTON :
+minutes = int(input("Enter the no of minutes : "));
+seconds = minutes * 60 ;
+print(f"{minutes} minutes is {seconds} seconds ")
+
+O\P :
+Enter the no of minutes : 5
+5 minutes is 300 seconds
+
