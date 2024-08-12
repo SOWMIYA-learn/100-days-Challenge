@@ -1,0 +1,33 @@
+day 12 of crew matrix : Not equal to zero program 
+
+
+IN C :
+#include<stdio.h>
+int main () {
+int num ;
+printf("Enter a number : ");
+scanf("%d" ,&num);
+if (num != 0){
+ printf("The Number is not equal to zero.\n");
+ } else{
+    printf("The Number is equal to zero.\n");
+    }
+    return 0 ;
+}
+
+
+IN PYTHON :
+num = float(input("Enter a Number :")
+if(num!=0):
+ print ("The Number is not equal to zero")
+else:
+ print ("The Number is equal to zero")
+
+O/P:
+ Enter a number : 5
+ The Number is not equal to zero.
+ Enter a number : 0
+ The Number is equal to zero.
+ Enter a number : -3
+ The Number is not equal to zero.
+
