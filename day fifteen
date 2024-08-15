@@ -1,0 +1,79 @@
+day 15 of crew matrix : century or half century program 
+
+IN C :
+#include<stdio.h>
+
+int main () {
+    int year; 
+    printf("Enter the year: "); 
+    scanf("%d", &year);
+    
+    if(year % 100 == 0) { 
+        printf("%d is a century year.\n", year);
+    } 
+    else if (year % 50 == 0) { 
+        printf("%d is a half-century year.\n", year);  
+    } 
+    else {
+        printf("%d is neither a century year nor a half-century year.\n", year);  
+    }
+
+    return 0;
+}
+
+O/P:
+2000 is a century year.
+1950 is a half-century year.
+2023 is neither a century year nor a half-century year.
+
+
+IN PYTHON :
+def check_year(year):
+if year % 100 == 0:
+   return f"{year} is a century year."
+elif year % 50 == 0:
+   return f"{year} is a half century year."
+else:
+   return f"{year} is neither a century year nor a half century year "
+year = int(input("Enter the year : "))
+print(check_year(year)) 
+
+O/P:
+2000 is a century year.
+1950 is a half-century year.
+2023 is neither a century year nor a half-century year.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
