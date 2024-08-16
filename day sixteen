@@ -1,0 +1,72 @@
+day 16 of crew matrix : Atleast one number 100 program :
+
+IN C :
+#include<stdio.h>
+int main() {
+int num1 , num2 , num3 ;
+printf("Enter three numbers : ");
+scanf("%d %d %d ", &num1 , &num2 , &num3 );
+if(num1 == 100 ||num2 == 100 || num3 == 100) {
+ printf("Atleast one number is 100.\n");
+ } else  {
+    printf("None of the numbers are 100.\n");
+   }
+return 0 ;
+}
+
+O/P :
+Enter three numbers: 20 100 45
+At least one number is 100.
+Enter three numbers: 70 90 0
+None of the numbers are 100.
+
+IN PYTHON :
+num1 = int(input("Enter the first no : "))
+num2 = int(input("Enter the second no :"))
+num3 = int(input("Enter the third no : "))
+if  num1 == 100 or num2 == 100 or num3 == 100:
+     print("At least one number is 100.")
+else :
+print("None of the numbers are 100.")
+
+
+ O\P: 
+Enter the first number: 20
+Enter the second number: 100
+Enter the third number: 45
+At least one number is 100.
+Enter the first number: 70
+Enter the second number: 90
+Enter the third number: 0
+None of the numbers are 100.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
