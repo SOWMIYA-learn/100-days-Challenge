@@ -1,0 +1,76 @@
+day 17 of crew matrix : Two subjects : pass or fail program 
+
+IN C :
+#include<stdio.h>
+int main() {
+int subject1 , subject2 ;
+int pass_mark=40 ;
+printf("Enter the marks for subject1: ");
+scanf("%d",&subject1);
+printf("Enter the marks for subject2: ");
+scanf("%d",&subject2);
+if(subject1 >= pass_mark && subject2 >= pass_mark) {
+  printf("You have passed in both the subjects.\n" );
+} else{
+    printf("You have failed in one or both the subjects .\n");
+ }
+return 0 ;
+}
+
+O\P:
+Enter the marks for subject1: 45
+Enter the marks for subject2: 38
+You have failed in one or both the subjects.
+Enter the marks for subject1: 50
+Enter the marks for subject2: 60
+You have passed in both the subjects.
+
+IN PYTHON :
+def check_pass_fail (subject1 , subject2 , pass_mark = 40 ):
+ if subject1 >= pass_mark and subject2 >= pass_mark ):
+       return "You have passed in both subject. "
+else :
+      return "You have failed in one or both the subjects.")
+subject1 = int(input("Enter marks for subject1 :")
+subject2 = int(input("Enter marks for subject2 :")
+result = check_pass_fail(subject1 , subject2 )
+print(result)
+
+O\P:
+Enter the marks for subject1: 45
+Enter the marks for subject2: 38
+You have failed in one or both the subjects.
+Enter the marks for subject1: 50
+Enter the marks for subject2: 60
+You have passed in both the subjects.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
