@@ -1,0 +1,37 @@
+day 18 of crew matrix : Hot Cold or Normal Program 
+
+IN C :
+#include<stdio.h>
+int main() {
+int temperature;
+printf("Enter the temperature : ");
+scanf("%d",&temperature);
+if(temperature >30 ) {
+    printf("It's Hot.\n");
+} else if (temperature < 15 ) {
+     printf("It's Cold \n");
+  } else {
+    printf("It's Normal \n ");
+    }
+     return 0 ;
+}
+
+IN PYTHON : 
+temperature = int (input ("Enter the temperature :"))
+if temperature >30 :
+ print("It's Hot ")
+elif temperature <15 :
+  print("It's Cold ")
+else :
+  print ("It's Normal ")   
+
+O\P:
+Enter the temperature : 35
+It's Hot 
+Enter the temperature : 10
+It's Cold 
+Enter the temperature : 25
+It's Normal 
+
+
+
