@@ -1,0 +1,56 @@
+day 19 of crew matrix : Odd or Even Program 
+  
+IN C :
+
+#include<stdio.h>
+int main () {
+ int number ;
+printf("Enter an integer :");
+scanf("%d",&number);
+if(number % 2 == 0 ) {
+    printf("%d is even.\n",number);
+} else {
+    printf("%d is odd.\n",number );
+  }
+ return 0 ;
+}
+
+
+O/P:
+Enter an integer: 4
+4 is even.
+Enter an integer: 7
+7 is odd.
+
+
+IN PYTHON :
+
+number = int(input("Enter an integer : "))
+if number % 2 == 0 :
+   print(f"{number} is even.")
+else :
+  print (f"{number} is odd.")
+
+O/P:
+Enter an integer: 4
+4 is even.
+Enter an integer: 7
+7 is odd.
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
