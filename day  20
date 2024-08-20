@@ -1,0 +1,63 @@
+day 20 of crew matrix : moblie signal 2g , 3g or 5g :
+
+IN C : 
+#include <stdio.h>
+
+void detectSignal(int signalStrength) {
+    if (signalStrength >= 0 && signalStrength <= 30) {
+        printf("Detected Signal: 2G\n");
+    } else if (signalStrength > 30 && signalStrength <= 70) {
+        printf("Detected Signal: 3G\n");
+    } else if (signalStrength > 70 && signalStrength <= 100) {
+        printf("Detected Signal: 5G\n");
+    } else {
+        printf("Invalid Signal Strength\n");
+    }
+}
+
+int main() {
+    int signalStrength;
+
+    printf("Enter signal strength (0-100): ");
+    scanf("%d", &signalStrength);
+
+    detectSignal(signalStrength);
+
+    return 0;
+}
+
+
+IN PYTHON :
+def detect_signal(signal_strength):
+    if 0 <= signal_strength <= 30:
+        print("Detected Signal: 2G")
+    elif 31 <= signal_strength <= 70:
+        print("Detected Signal: 3G")
+    elif 71 <= signal_strength <= 100:
+        print("Detected Signal: 5G")
+    else:
+        print("Invalid Signal Strength")
+
+def main():
+    try:
+        signal_strength = int(input("Enter signal strength (0-100): "))
+        detect_signal(signal_strength)
+    except ValueError:
+        print("Please enter a valid number")
+
+if __name__ == "__main__":
+    main()
+
+O\P:
+Enter signal strength (0-100): 25
+Detected Signal: 2G
+Enter signal strength (0-100): 50
+Detected Signal: 3G
+Enter signal strength (0-100): 85
+Detected Signal: 5G
+Enter signal strength (0-100): 110
+Invalid Signal Strength
+
+
+
+
