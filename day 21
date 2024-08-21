@@ -1,0 +1,62 @@
+day 21  crew matrix : character - Male or Female :
+
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    char gender;
+
+    // Prompt the user to enter a character
+    printf("Enter 'M' for Male or 'F' for Female: ");
+    scanf(" %c", &gender);
+
+    // Check the input and determine if it's male or female
+    if (gender == 'M' || gender == 'm') {
+        printf("You have selected Male.\n");
+    } else if (gender == 'F' || gender == 'f') {
+        printf("You have selected Female.\n");
+    } else {
+        printf("Invalid input! Please enter 'M' or 'F'.\n");
+    }
+
+    return 0;
+}
+
+O\P :
+M
+You have selected Male.
+f
+You have selected Female.
+X
+Invalid input! Please enter 'M' or 'F'.
+
+
+IN PYTHON :
+# Prompt the user to enter a character
+gender = input("Enter 'M' for Male or 'F' for Female: ").strip()
+
+# Check the input and determine if it's male or female
+if gender == 'M' or gender == 'm':
+    print("You have selected Male.")
+elif gender == 'F' or gender == 'f':
+    print("You have selected Female.")
+else:
+    print("Invalid input! Please enter 'M' or 'F'.")
+
+O\P:
+M
+You have selected Male.
+f
+You have selected Female.
+X
+Invalid input! Please enter 'M' or 'F'.
+
+
+
+
+
+
+
+
+
