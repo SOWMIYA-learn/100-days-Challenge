@@ -1,0 +1,33 @@
+day 24 0f crew matrix : Print unit digit
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int number, unit_digit;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    unit_digit = number % 10;
+    printf("The unit digit of %d is: %d\n", number, unit_digit);
+    return 0;
+}
+
+O/P:
+Enter a number: 12345
+The unit digit of 12345 is: 5
+
+
+IN PYTNON :
+number = int(input("Enter a number: "));
+unit_digit = number % 10;
+print(f"The unit digit of {number} is: {unit_digit}")
+
+O/P:
+Enter a number: 12345
+The unit digit of 12345 is: 5
+
+
+
+
+
+
