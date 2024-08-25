@@ -1,0 +1,33 @@
+day 25 of crew matrix : Remove the unit digit program 
+
+IN C :
+#include <stdio.h>
+int main() {
+    int num, result;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    result = num / 10;
+    printf("Number after removing the unit digit: %d\n", result);
+    return 0;
+}
+
+O/P:
+Enter a number: 123
+Number after removing the unit digit: 12
+
+IN PYTHON :
+
+num = int(input("Enter a number: "))
+result = num // 10  # Using integer division
+print(f"Number after removing the unit digit: {result}")
+
+O/P:
+Enter a number: 123
+Number after removing the unit digit: 12
+
+
+
+
+
+
+
