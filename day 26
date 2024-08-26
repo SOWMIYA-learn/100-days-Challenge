@@ -1,0 +1,36 @@
+day 26 of crew matrix ; multiply 2 numbers 
+
+IN C:
+
+#include <stdio.h>
+int main() {
+    int num1, num2, result;
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+    result = num1 * num2;
+    printf("The result of %d * %d is: %d\n", num1, num2, result);
+    return 0;
+}
+
+O/P:
+Enter first number: 5
+Enter second number: 4
+The result of 5 * 4 is: 20
+
+IN PYTHON :
+
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+result = num1 * num2
+print(f"The result of {num1} * {num2} is: {result}")
+
+O/P:
+Enter the first number: 5
+Enter the second number: 4
+The result of 5.0 * 4.0 is: 20.0
+
+
+
+
