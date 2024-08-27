@@ -1,0 +1,41 @@
+day 27 of crew matrix : print remainder when divided by 5 program 
+
+IN C:
+#include<stdio.h>
+int main () {
+int num , remainder ;
+printf("Enter a number : ");
+scanf("%d" , &num);
+remainder = num % 5 ;
+printf("Remainder when %d is divided by 5 is : ",num,remainder");
+return 0;
+}
+
+O/P:
+Enter a number: 23
+Remainder when 23 is divided by 5 is: 3
+
+IN PYTHON :
+num = int(input("Enter a number : "))
+remainder = num % 5;
+print(f"Remainder when {num} is divided by 5 is : {remainder}")
+
+O/P:
+Enter a number: 23
+Remainder when 23 is divided by 5 is: 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
