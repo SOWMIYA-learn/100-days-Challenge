@@ -1,0 +1,50 @@
+day 28 of crew matrix : largest of 2 numbers Program
+
+IN C : 
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+
+    // Input two numbers from the user
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+
+    // Compare the numbers and find the largest
+    if (num1 > num2) {
+        printf("The largest number is: %d\n", num1);
+    } else if (num2 > num1) {
+        printf("The largest number is: %d\n", num2);
+    } else {
+        printf("Both numbers are equal.\n");
+    }
+
+    return 0;
+}
+
+O/P : 
+Enter the first number: 5
+Enter the second number: 8
+The largest number is: 8
+
+
+IN PYTHON: 
+# Input two numbers from the user
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+# Compare the numbers and find the largest
+if num1 > num2:
+    print(f"The largest number is: {num1}")
+elif num2 > num1:
+    print(f"The largest number is: {num2}")
+else:
+    print("Both numbers are equal.")
+
+O/P:
+Enter the first number: 5
+Enter the second number: 8
+The largest number is: 8
