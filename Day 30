@@ -1,0 +1,54 @@
+day 30 of crew matrix : pass or fail program 
+
+IN C : 
+#include <stdio.h>
+
+int main() {
+    int marks;
+
+    // Input marks from user
+    printf("Enter your marks (out of 100): ");
+    scanf("%d", &marks);
+
+    // Check if marks are valid
+    if (marks < 0 || marks > 100) {
+        printf("Invalid marks. Please enter a value between 0 and 100.\n");
+    } else {
+        // Determine pass or fail
+        if (marks >= 40) {
+            printf("You passed!\n");
+        } else {
+            printf("You failed.\n");
+        }
+    }
+
+    return 0;
+}
+
+O/P:
+Enter your marks (out of 100): 35
+You failed.
+
+IN PYTHON:
+# Input marks from user
+marks = int(input("Enter your marks (out of 100): "))
+
+# Check if marks are valid
+if marks < 0 or marks > 100:
+    print("Invalid marks. Please enter a value between 0 and 100.")
+else:
+    # Determine pass or fail
+    if marks >= 40:
+        print("You passed!")
+    else:
+O/P :
+Enter your marks (out of 100): 85
+You passed!
+Enter your marks (out of 100): 25
+You failed.
+        print("You failed.")
+
+
+
+
+
