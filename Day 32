@@ -1,0 +1,26 @@
+day 32 of crew matrix : print cube Program
+
+IN C : 
+#include <stdio.h>
+int main() {
+    int num, cube ;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    cube = num * num * num;
+    printf("The cube of %d is %d\n", num, cube);
+    return 0;
+}
+
+O/P :
+ Enter an integer: 3
+The cube of 3 is 27
+
+IN PYTHON:
+
+num = int(input("Enter an integer: "))
+cube = num ** 3
+print(f"The cube of {num} is {cube}")
+
+O/P :
+Enter an integer: 3
+The cube of 3 is 27
