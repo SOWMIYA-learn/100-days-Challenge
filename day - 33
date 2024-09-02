@@ -1,0 +1,44 @@
+day 33 of crew matrix : print the next number program 
+
+IN C :
+# include<stdio.h>
+int main() {
+int num , next_num;
+printf("Enter an integer :");
+scanf("%d",&num);
+next_num = num + 1 ;
+printf("The next number of %d is : %d\n ",num,next_num);
+return 0 ;
+}
+
+O\P:
+Enter an integer: 7
+The next number of 7 is: 8
+Enter an integer: -3
+The next number of -3 is: -2
+
+IN PYTHON :
+num = int(input("Enter an integer :"))
+next_num = num + 1
+print(f"The next number of {num} is {next_num} ")
+
+ O\P:
+Enter an integer: 10
+The next number of 10 is 11
+Enter an integer: -5
+The next number of -5 is -4
+Enter an integer: 0
+The next number of 0 is 1
+
+
+
+
+
+
+
+
+
+
+
+
+
