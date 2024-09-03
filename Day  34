@@ -1,0 +1,38 @@
+DAY 34 of crew matrix : print the previous number program 
+
+IN C:
+#include <stdio.h>
+
+int main() {
+    int number, previous_number;
+
+    // Input: a number
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    // Calculate the previous number
+    previous_number = number - 1;
+
+    // Print the previous number
+    printf("The previous number is: %d\n", previous_number);
+
+    return 0;
+}
+
+O/P :
+Enter a number: 10
+The previous number is: 9
+
+IN PYTHON : 
+# Input: a number
+number = int(input("Enter a number: "))
+
+# Calculate the previous number
+previous_number = number - 1
+
+# Print the previous number
+print("The previous number is:", previous_number)
+
+O/P :
+Enter a number: 10
+The previous number is: 9
