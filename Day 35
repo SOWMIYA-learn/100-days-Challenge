@@ -1,0 +1,38 @@
+day 35 of crew matrix : print square program 
+
+IN C : 
+#include <stdio.h>
+
+int main() {
+    int number, square;
+
+    // Input the number
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    // Calculate the square of the number
+    square = number * number;
+
+    // Print the result
+    printf("The square of %d is %d\n", number, square);
+
+    return 0;
+}
+
+O/P :
+Enter a number: 5
+The square of 5 is 25
+
+IN PYTHON : 
+# Input the number
+number = int(input("Enter a number: "))
+
+# Calculate the square of the number
+square = number * number
+
+# Print the result
+print(f"The square of {number} is {square}")
+
+O/P :
+Enter a number: 5
+The square of 5 is 25
