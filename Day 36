@@ -1,0 +1,44 @@
+day 36 of crew matrix : subtraction of two numbers program 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int num1, num2, result;
+    
+    // Input two numbers
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+    
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+    
+    // Perform subtraction
+    result = num1 - num2;
+    
+    // Display the result
+    printf("The result of the subtraction is: %d\n", result);
+    
+    return 0;
+}
+
+O/P :
+Enter the first number: 10
+Enter the second number: 4
+The result of the subtraction is: 6
+
+IN PYTHON : 
+# Input two numbers
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+# Perform subtraction
+result = num1 - num2
+
+# Display the result
+print("The result of the subtraction is:", result)
+
+O/P :
+Enter the first number: 10
+Enter the second number: 4
+The result of the subtraction is: 6.0
