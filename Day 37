@@ -1,0 +1,38 @@
+day 37 of crew matrix : multiply by 2 program 
+
+IN C : 
+#include <stdio.h>
+
+int main() {
+    int number, result;
+    
+    // Input a number from the user
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    
+    // Multiply the number by 2
+    result = number * 2;
+    
+    // Display the result
+    printf("The result of %d multiplied by 2 is %d\n", number, result);
+    
+    return 0;
+}
+
+O/P :
+Enter a number: 5
+The result of 5 multiplied by 2 is 10
+
+IN PYTHON :
+# Input a number from the user
+number = int(input("Enter a number: "))
+
+# Multiply the number by 2
+result = number * 2
+
+# Display the result
+print(f"The result of {number} multiplied by 2 is {result}")
+
+O/P :
+Enter a number: 5
+The result of 5 multiplied by 2 is 10
