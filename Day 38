@@ -1,0 +1,40 @@
+day 38 of crew matrix : add 2 numbers 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int num1, num2, sum;
+
+    // Asking the user to enter two numbers
+    printf("Enter two integers: ");
+    scanf("%d %d", &num1, &num2);
+
+    // Calculating the sum
+    sum = num1 + num2;
+
+    // Displaying the result
+    printf("The sum of %d and %d is: %d\n", num1, num2, sum);
+
+    return 0;
+}
+
+O/P :
+Enter two integers: 5 10
+The sum of 5 and 10 is: 15
+
+IN PYTHON:
+# Asking the user to enter two numbers
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+# Calculating the sum
+sum = num1 + num2
+
+# Displaying the result
+print(f"The sum of {num1} and {num2} is: {sum}")
+
+O/P :
+Enter the first number: 5
+Enter the second number: 10
+The sum of 5.0 and 10.0 is: 15.0
