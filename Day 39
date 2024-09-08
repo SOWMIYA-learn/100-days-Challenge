@@ -1,0 +1,25 @@
+day 39 of crew matrix : Print Skill Rack in first two lines program 
+
+IN C :
+
+#include <stdio.h>
+int main() {
+    // Printing "Skill Rack" on the first two lines
+    printf("Skill Rack\n");
+    printf("Skill Rack\n");
+    return 0;
+}
+
+O/P :
+Skill Rack
+Skill Rack
+
+IN PYTHON :
+
+# Printing "Skill Rack" on the first two lines
+print("Skill Rack")
+print("Skill Rack")
+
+O/P :
+Skill Rack
+Skill Rack
