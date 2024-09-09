@@ -1,0 +1,20 @@
+day 40 of crew matrix : print Skill Rack as output program 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    // Print the output
+    printf("Skill Rack\n");
+    return 0;
+}
+
+O/P :
+Skill Rack
+
+IN PYTHON 
+# Print the output
+print("Skill Rack")
+
+O/P :
+Skill Rack
