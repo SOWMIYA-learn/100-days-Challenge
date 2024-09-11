@@ -1,0 +1,63 @@
+day 42 of crew matrix: sort same unit digit program 
+
+IN C : 
+#include <stdio.h>
+
+void sortUnitDigit(int arr[], int n) {
+    // Bubble sort algorithm to sort based on unit digit
+    for (int i = 0; i < n-1; i++) {
+        for (int j = 0; j < n-i-1; j++) {
+            if (arr[j] % 10 > arr[j+1] % 10) {
+                // Swap the elements
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+}
+
+int main() {
+    int arr[] = {45, 32, 17, 94, 28, 39, 22};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Original Array: \n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    sortUnitDigit(arr, n);
+
+    printf("\n\nArray after sorting based on unit digits: \n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+
+O/P :
+
+IN PYTHON:
+def sort_unit_digit(arr):
+    # Sort array based on the unit digit using a lambda function
+    return sorted(arr, key=lambda x: x % 10)
+
+# Example array
+arr = [45, 32, 17, 94, 28, 39, 22]
+
+print("Original Array:")
+print(arr)
+
+# Sorting based on unit digit
+sorted_arr = sort_unit_digit(arr)
+
+print("\nArray after sorting based on unit digits:")
+print(sorted_arr)
+
+O/P :
+Original Array:
+[45, 32, 17, 94, 28, 39, 22]
+
+Array after sorting based on unit digits:
+[32, 22, 94, 45, 17, 28, 39]
