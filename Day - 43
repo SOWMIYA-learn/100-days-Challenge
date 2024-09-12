@@ -1,0 +1,56 @@
+day 43 of crew matrix : 12  to  24 hr time format program 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int hour, minute;
+    char meridian[3];
+
+    printf("Enter time (HH MM AM/PM): ");
+    scanf("%d %d %s", &hour, &minute, meridian);
+
+    if ((meridian[0] == 'P' || meridian[0] == 'p') && hour != 12) 
+        hour += 12;
+    if ((meridian[0] == 'A' || meridian[0] == 'a') && hour == 12) 
+        hour = 0;
+
+    printf("24-hour format: %02d:%02d\n", hour, minute);
+    return 0;
+}
+
+O/P :
+Enter time (HH MM AM/PM): 02 30 PM
+24-hour format: 14:30
+
+Enter time (HH MM AM/PM): 12 15 AM
+24-hour format: 00:15
+
+IN PYTHON:
+# Function to convert 12-hour time to 24-hour format
+def convert_to_24_hour(hour, minute, meridian):
+    if (meridian.lower() == 'pm' and hour != 12):
+        hour += 12
+    if (meridian.lower() == 'am' and hour == 12):
+        hour = 0
+    return f"{hour:02d}:{minute:02d}"
+
+# Input time in 12-hour format
+hour = int(input("Enter hour (1-12): "))
+minute = int(input("Enter minute (0-59): "))
+meridian = input("Enter AM/PM: ")
+
+# Convert and display the result
+time_24 = convert_to_24_hour(hour, minute, meridian)
+print(f"24-hour format: {time_24}")
+
+O/P :
+Enter hour (1-12): 2
+Enter minute (0-59): 30
+Enter AM/PM: PM
+24-hour format: 14:30
+
+Enter hour (1-12): 12
+Enter minute (0-59): 15
+Enter AM/PM: AM
+24-hour format: 00:15
