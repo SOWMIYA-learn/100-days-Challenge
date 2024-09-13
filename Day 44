@@ -1,0 +1,73 @@
+day 44 of crew matrix : positive and negative based mutip program 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int num, divisor;
+
+    // Input from user
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("Enter the divisor: ");
+    scanf("%d", &divisor);
+
+    // Check if divisor is zero
+    if (divisor == 0) {
+        printf("Divisor cannot be zero.\n");
+        return 0;
+    }
+
+    // Check if num is a multiple of divisor
+    if (num % divisor == 0) {
+        if (num > 0) {
+            printf("%d is a positive multiple of %d.\n", num, divisor);
+        } else if (num < 0) {
+            printf("%d is a negative multiple of %d.\n", num, divisor);
+        } else {
+            printf("0 is a multiple of any number.\n");
+        }
+    } else {
+        printf("%d is not a multiple of %d.\n", num, divisor);
+    }
+
+    return 0;
+}
+
+O/P
+Enter a number: 15
+Enter the divisor: 5
+15 is a positive multiple of 5.
+Enter a number: -10
+Enter the divisor: 2
+-10 is a negative multiple of 2.
+Enter a number: 13
+Enter the divisor: 5
+13 is not a multiple of 5.
+
+IN PYTHON:
+# Input from user
+num = int(input("Enter a number: "))
+divisor = int(input("Enter the divisor: "))
+
+# Check if divisor is zero
+if divisor == 0:
+    print("Divisor cannot be zero.")
+else:
+    # Check if num is a multiple of divisor
+    if num % divisor == 0:
+        if num > 0:
+            print(f"{num} is a positive multiple of {divisor}.")
+        elif num < 0:
+            print(f"{num} is a negative multiple of {divisor}.")
+        else:
+            print("0 is a multiple of any number.")
+    else:
+        print(f"{num} is not a multiple of {divisor}.")
+
+
+O/P
+Enter a number: 24
+Enter the divisor: 8
+24 is a positive multiple of 8.
+
