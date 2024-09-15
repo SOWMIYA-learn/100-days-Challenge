@@ -1,0 +1,55 @@
+day 46 of crew maitrix : simple C program that checks whether a given number is two digits or three digits and displays an appropriate message.
+
+IN C :
+
+#include <stdio.h>
+int main() {
+    int num;
+
+    // Input the number
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Check for two-digit number
+    if (num >= 10 && num <= 99) {
+        printf("%d is a two-digit number.\n", num);
+    }
+    // Check for three-digit number
+    else if (num >= 100 && num <= 999) {
+        printf("%d is a three-digit number.\n", num);
+    }
+    // If the number is neither two nor three digits
+    else {
+        printf("%d is neither a two-digit nor a three-digit number.\n", num);
+    }
+
+    return 0;
+}
+
+IN PYTHON:
+
+# Input the number from the user
+num = int(input("Enter a number: "))
+
+# Check for two-digit number
+if 10 <= num <= 99:
+    print(f"{num} is a two-digit number.")
+
+# Check for three-digit number
+elif 100 <= num <= 999:
+    print(f"{num} is a three-digit number.")
+
+# If the number is neither two nor three digits
+else:
+    print(f"{num} is neither a two-digit nor a three-digit number.")
+
+O/P :
+
+Enter a number: 56
+56 is a two-digit number.
+
+Enter a number: 234
+234 is a three-digit number.
+
+Enter a number: 5
+5 is neither a two-digit nor a three-digit number.
