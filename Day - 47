@@ -1,0 +1,58 @@
+day 47 of crew matrix :reads five integers from the user and counts how many of them are odd:
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int numbers[5];
+    int oddCount = 0;
+
+    // Input 5 integers
+    printf("Enter 5 integers:\n");
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", &numbers[i]);
+    }
+
+    // Count odd numbers
+    for (int i = 0; i < 5; i++) {
+        if (numbers[i] % 2 != 0) {
+            oddCount++;
+        }
+    }
+
+    // Output the number of odd integers
+    printf("Count of odd numbers: %d\n", oddCount);
+
+    return 0;
+}
+
+O/P :
+Enter 5 integers:
+12 15 7 9 2
+Count of odd numbers: 3
+
+IN PYTHON :
+# Input 5 integers
+numbers = []
+print("Enter 5 integers:")
+for i in range(5):
+    num = int(input())
+    numbers.append(num)
+
+# Count odd numbers
+odd_count = 0
+for num in numbers:
+    if num % 2 != 0:
+        odd_count += 1
+
+# Output the number of odd integers
+print(f"Count of odd numbers: {odd_count}")
+
+O/P :
+Enter 5 integers:
+12
+15
+7
+9
+2
+Count of odd numbers: 3
