@@ -1,0 +1,65 @@
+day 48 of crew matrix :program to find the first three factors of a given number:
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int num, count = 0;
+    
+    // Taking input from the user
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    printf("First three factors of %d are: ", num);
+
+    // Loop to find the first three factors
+    for (int i = 1; i <= num && count < 3; i++) {
+        if (num % i == 0) {
+            printf("%d ", i);
+            count++;
+        }
+    }
+
+    // If less than 3 factors found
+    if (count < 3) {
+        printf("\nThe number has less than 3 factors.");
+    }
+
+    return 0;
+}
+
+O/p :
+Enter a number: 12
+First three factors of 12 are: 1 2 3
+
+Enter a number: 7
+First three factors of 7 are: 1 7 
+The number has less than 3 factors.
+
+IN PYTHON:
+# Function to find and print the first three factors of a number
+def first_three_factors(num):
+    count = 0
+    print(f"First three factors of {num} are: ", end="")
+    
+    for i in range(1, num+1):
+        if num % i == 0:
+            print(i, end=" ")
+            count += 1
+        if count == 3:
+            break
+    
+    if count < 3:
+        print(f"\nThe number {num} has less than 3 factors.")
+
+# Taking input from the user
+num = int(input("Enter a number: "))
+first_three_factors(num)
+
+O/P:
+Enter a number: 15
+First three factors of 15 are: 1 3 5
+
+Enter a number: 7
+First three factors of 7 are: 1 7 
+The number 7 has less than 3 factors.
