@@ -1,0 +1,56 @@
+day 49 of crew matrix : five alphabets program 
+
+IN C
+#include <stdio.h>
+
+int main() {
+    char alphabets[5];
+    
+    // Taking input from the user
+    printf("Enter five alphabets: ");
+    
+    for (int i = 0; i < 5; i++) {
+        scanf(" %c", &alphabets[i]);  // Reading characters one by one
+    }
+
+    // Printing the alphabets
+    printf("The entered alphabets are: ");
+    for (int i = 0; i < 5; i++) {
+        printf("%c ", alphabets[i]);
+    }
+
+    return 0;
+}
+
+
+O/P :
+Enter five alphabets: a b c d e
+The entered alphabets are: a b c d e
+
+IN PYTHON:
+# Function to input and print five alphabets
+def input_and_print_alphabets():
+    alphabets = []
+    
+    # Taking input from the user
+    print("Enter five alphabets: ")
+    
+    for i in range(5):
+        alphabet = input(f"Enter alphabet {i+1}: ")
+        alphabets.append(alphabet)
+    
+    # Printing the alphabets
+    print("The entered alphabets are:", ' '.join(alphabets))
+
+# Call the function
+input_and_print_alphabets()
+
+0/P :
+Enter five alphabets: 
+Enter alphabet 1: a
+Enter alphabet 2: b
+Enter alphabet 3: c
+Enter alphabet 4: d
+Enter alphabet 5: e
+
+The entered alphabets are: a b c d e
