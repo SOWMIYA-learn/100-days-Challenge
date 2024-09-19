@@ -1,0 +1,76 @@
+day 50 of crew matrix : calculate park entrance fee program 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int age;
+    float fee;
+
+    // Get the age of the visitor
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    // Determine the entrance fee based on the age
+    if (age < 5) {
+        fee = 0.0;  // Free entry for children under 5
+    } else if (age >= 5 && age <= 17) {
+        fee = 50.0;  // Reduced fee for children and teenagers
+    } else if (age >= 18 && age <= 60) {
+        fee = 100.0; // Full fee for adults
+    } else {
+        fee = 30.0;  // Reduced fee for senior citizens above 60
+    }
+
+    // Display the entrance fee
+    printf("The park entrance fee is: Rs. %.2f\n", fee);
+
+    return 0;
+}
+
+O/P :
+Enter your age: 4
+The park entrance fee is: Rs. 0.00
+
+Enter your age: 16
+The park entrance fee is: Rs. 50.00
+
+Enter your age: 45
+The park entrance fee is: Rs. 100.00
+
+Enter your age: 65
+The park entrance fee is: Rs. 30.00
+
+IN PYTHON:
+# Function to calculate park entrance fee
+def calculate_fee(age):
+    if age < 5:
+        return 0.0  # Free entry for children under 5
+    elif 5 <= age <= 17:
+        return 50.0  # Reduced fee for children and teenagers
+    elif 18 <= age <= 60:
+        return 100.0 # Full fee for adults
+    else:
+        return 30.0  # Reduced fee for senior citizens above 60
+
+# Input: Get the age from the user
+age = int(input("Enter your age: "))
+
+# Calculate fee based on age
+fee = calculate_fee(age)
+
+# Output: Display the entrance fee
+print(f"The park entrance fee is: Rs. {fee:.2f}")
+
+O/P:
+Enter your age: 4
+The park entrance fee is: Rs. 0.00
+
+Enter your age: 16
+The park entrance fee is: Rs. 50.00
+
+Enter your age: 45
+The park entrance fee is: Rs. 100.00
+
+Enter your age: 65
+The park entrance fee is: Rs. 30.00
