@@ -1,0 +1,45 @@
+day 51 crew matrix : program that doubles a number five times and displays the result after each doubling:
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int num, i;
+
+    // Input a number from the user
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Loop to double the number 5 times
+    for(i = 1; i <= 5; i++) {
+        num = num * 2; // Double the number
+        printf("After doubling %d time(s), the number is: %d\n", i, num);
+    }
+
+    return 0;
+}
+
+O/P:
+Enter a number: 3
+After doubling 1 time(s), the number is: 6
+After doubling 2 time(s), the number is: 12
+After doubling 3 time(s), the number is: 24
+After doubling 4 time(s), the number is: 48
+After doubling 5 time(s), the number is: 96
+
+IN PYTHON:
+# Input a number from the user
+num = int(input("Enter a number: "))
+
+# Loop to double the number 5 times
+for i in range(1, 6):
+    num = num * 2  # Double the number
+    print(f"After doubling {i} time(s), the number is: {num}")
+
+O/P :
+Enter a number: 3
+After doubling 1 time(s), the number is: 6
+After doubling 2 time(s), the number is: 12
+After doubling 3 time(s), the number is: 24
+After doubling 4 time(s), the number is: 48
+After doubling 5 time(s), the number is: 96
