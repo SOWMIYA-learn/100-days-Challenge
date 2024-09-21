@@ -1,0 +1,65 @@
+day 52 of crew matrix: program to check if a given number is a multiple of two numbers,  
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int number, N1, N2;
+
+    // Input the number to be checked
+    printf("Enter the number to check: ");
+    scanf("%d", &number);
+
+    // Input the two numbers
+    printf("Enter the first number (N1): ");
+    scanf("%d", &N1);
+
+    printf("Enter the second number (N2): ");
+    scanf("%d", &N2);
+
+    // Check if 'number' is a multiple of both N1 and N2
+    if (number % N1 == 0 && number % N2 == 0) {
+        printf("%d is a multiple of both %d and %d.\n", number, N1, N2);
+    } else {
+        printf("%d is not a multiple of both %d and %d.\n", number, N1, N2);
+    }
+
+    return 0;
+}
+
+O/P:
+Enter the number to check: 24
+Enter the first number (N1): 3
+Enter the second number (N2): 4
+24 is a multiple of both 3 and 4.
+
+Enter the number to check: 25
+Enter the first number (N1): 3
+Enter the second number (N2): 4
+25 is not a multiple of both 3 and 4.
+
+IN PYTHON:
+# Input the number to be checked
+number = int(input("Enter the number to check: "))
+
+# Input the two numbers
+N1 = int(input("Enter the first number (N1): "))
+N2 = int(input("Enter the second number (N2): "))
+
+# Check if 'number' is a multiple of both N1 and N2
+if number % N1 == 0 and number % N2 == 0:
+    print(f"{number} is a multiple of both {N1} and {N2}.")
+else:
+    print(f"{number} is not a multiple of both {N1} and {N2}.")
+
+O/P:
+Enter the number to check: 24
+Enter the first number (N1): 3
+Enter the second number (N2): 4
+24 is a multiple of both 3 and 4.
+
+Enter the number to check: 25
+Enter the first number (N1): 3
+Enter the second number (N2): 4
+25 is not a multiple of both 3 and 4.
+
