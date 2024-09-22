@@ -1,0 +1,60 @@
+day 53 of crew matrix : program that checks if two fractions have the same numerator or denominator:
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int num1, denom1, num2, denom2;
+
+    // Input for the first fraction
+    printf("Enter the numerator and denominator of the first fraction (e.g., 3 4 for 3/4): ");
+    scanf("%d %d", &num1, &denom1);
+
+    // Input for the second fraction
+    printf("Enter the numerator and denominator of the second fraction (e.g., 3 6 for 3/6): ");
+    scanf("%d %d", &num2, &denom2);
+
+    // Check if the numerators or denominators are the same
+    if (num1 == num2 && denom1 == denom2) {
+        printf("Both numerators and denominators are the same.\n");
+    } else if (num1 == num2) {
+        printf("The numerators are the same.\n");
+    } else if (denom1 == denom2) {
+        printf("The denominators are the same.\n");
+    } else {
+        printf("Neither the numerators nor the denominators are the same.\n");
+    }
+
+    return 0;
+}
+
+O/P :
+Enter the numerator and denominator of the first fraction (e.g., 3 4 for 3/4): 3 4
+Enter the numerator and denominator of the second fraction (e.g., 3 6 for 3/6): 3 6
+The numerators are the same.
+
+IN PYTHON:
+# Input for the first fraction
+num1 = int(input("Enter the numerator of the first fraction: "))
+denom1 = int(input("Enter the denominator of the first fraction: "))
+
+# Input for the second fraction
+num2 = int(input("Enter the numerator of the second fraction: "))
+denom2 = int(input("Enter the denominator of the second fraction: "))
+
+# Check if the numerators or denominators are the same
+if num1 == num2 and denom1 == denom2:
+    print("Both numerators and denominators are the same.")
+elif num1 == num2:
+    print("The numerators are the same.")
+elif denom1 == denom2:
+    print("The denominators are the same.")
+else:
+    print("Neither the numerators nor the denominators are the same.")
+
+O/P :
+Enter the numerator of the first fraction: 3
+Enter the denominator of the first fraction: 4
+Enter the numerator of the second fraction: 3
+Enter the denominator of the second fraction: 6
+The numerators are the same.
