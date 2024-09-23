@@ -1,0 +1,45 @@
+day 54 of crew matrix : Absolute difference multiples program 
+
+IN C :
+#include <stdio.h>
+#include <stdlib.h>  // For abs() function
+
+int main() {
+    int num1, num2, difference;
+
+    // Input two numbers from the user
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+
+    // Calculate the absolute difference
+    difference = abs(num1 - num2);
+
+    // Display the result
+    printf("The absolute difference between %d and %d is: %d\n", num1, num2, difference);
+
+    return 0;
+}
+
+O/P :
+Enter the first number: 10
+Enter the second number: 25
+The absolute difference between 10 and 25 is: 15
+
+IN PYTHON:
+# Input two numbers from the user
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+# Calculate the absolute difference
+difference = abs(num1 - num2)
+
+# Display the result
+print(f"The absolute difference between {num1} and {num2} is: {difference}")
+
+O/P :
+Enter the first number: 10
+Enter the second number: 25
+The absolute difference between 10 and 25 is: 15
