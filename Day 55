@@ -1,0 +1,53 @@
+day 55 of crew matrix : Match First three characters program 
+
+IN C :
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str1[100], str2[100];
+
+    // Input two strings from the user
+    printf("Enter the first string: ");
+    fgets(str1, sizeof(str1), stdin);
+    printf("Enter the second string: ");
+    fgets(str2, sizeof(str2), stdin);
+
+    // Compare the first three characters
+    if (strncmp(str1, str2, 3) == 0) {
+        printf("The first three characters match.\n");
+    } else {
+        printf("The first three characters do not match.\n");
+    }
+
+    return 0;
+}
+
+O/P:
+Enter the first string: hello
+Enter the second string: helix
+The first three characters match.
+
+Enter the first string: apple
+Enter the second string: apricot
+The first three characters do not match.
+
+IN PYTHON:
+# Input two strings from the user
+str1 = input("Enter the first string: ")
+str2 = input("Enter the second string: ")
+
+# Check if the first three characters match
+if str1[:3] == str2[:3]:
+    print("The first three characters match.")
+else:
+    print("The first three characters do not match.")
+
+O/P :
+Enter the first string: hello
+Enter the second string: helix
+The first three characters match.
+
+Enter the first string: apple
+Enter the second string: apricot
+The first three characters do not match.
