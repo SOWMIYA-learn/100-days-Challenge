@@ -1,0 +1,44 @@
+day 59 :program that takes two integers as input, adds them, and displays the sum as the third integer:
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int num1, num2, sum;
+
+    // Input two integers from the user
+    printf("Enter the first integer: ");
+    scanf("%d", &num1);
+    
+    printf("Enter the second integer: ");
+    scanf("%d", &num2);
+
+    // Calculate the sum of the two integers
+    sum = num1 + num2;
+
+    // Display the result
+    printf("The sum of %d and %d is: %d\n", num1, num2, sum);
+
+    return 0;
+}
+
+O/P :
+Enter the first integer: 5
+Enter the second integer: 7
+The sum of 5 and 7 is: 12
+
+In PYTHON :
+# Input two integers from the user
+num1 = int(input("Enter the first integer: "))
+num2 = int(input("Enter the second integer: "))
+
+# Calculate the sum of the two integers
+sum_result = num1 + num2
+
+# Display the result
+print(f"The sum of {num1} and {num2} is: {sum_result}")
+
+O/P :
+Enter the first integer: 5
+Enter the second integer: 7
+The sum of 5 and 7 is: 12
