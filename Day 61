@@ -1,0 +1,80 @@
+day 61 : Odd Even Mixed program 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int num, digit;
+    int hasEven = 0, hasOdd = 0;
+
+    // Input the number
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Check each digit of the number
+    while (num > 0) {
+        digit = num % 10;  // Extract the last digit
+        
+        if (digit % 2 == 0) {
+            hasEven = 1;
+        } else {
+            hasOdd = 1;
+        }
+
+        num /= 10;  // Remove the last digit
+    }
+
+    // Determine and display the result
+    if (hasEven && hasOdd) {
+        printf("The number is Mixed.\n");
+    } else if (hasEven) {
+        printf("The number is Even.\n");
+    } else {
+        printf("The number is Odd.\n");
+    }
+
+    return 0;
+}
+
+O/P :
+Enter a number: 2468
+The number is Even.
+
+Enter a number: 1357
+The number is Odd.
+
+Enter a number: 1234
+The number is Mixed.
+
+IN PYTHON:
+# Input the number
+num = input("Enter a number: ")
+
+# Flags to check if there's any odd or even digit
+has_even = False
+has_odd = False
+
+# Check each digit of the number
+for digit in num:
+    if int(digit) % 2 == 0:
+        has_even = True
+    else:
+        has_odd = True
+
+# Determine and display the result
+if has_even and has_odd:
+    print("The number is Mixed.")
+elif has_even:
+    print("The number is Even.")
+else:
+    print("The number is Odd.")
+
+O/P :
+Enter a number: 2468
+The number is Even.
+
+Enter a number: 1357
+The number is Odd.
+
+Enter a number: 1234
+The number is Mixed.
