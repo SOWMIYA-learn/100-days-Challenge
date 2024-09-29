@@ -1,0 +1,53 @@
+day 60 : program that checks whether two characters entered by the user are the same or different
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    char char1, char2;
+
+    // Input two characters from the user
+    printf("Enter the first character: ");
+    scanf(" %c", &char1);
+    
+    printf("Enter the second character: ");
+    scanf(" %c", &char2);
+
+    // Check if the characters are the same or different
+    if (char1 == char2) {
+        printf("The characters '%c' and '%c' are the SAME.\n", char1, char2);
+    } else {
+        printf("The characters '%c' and '%c' are DIFFERENT.\n", char1, char2);
+    }
+
+    return 0;
+}
+
+O/P :
+Enter the first character: a
+Enter the second character: a
+The characters 'a' and 'a' are the SAME.
+
+Enter the first character: a
+Enter the second character: b
+The characters 'a' and 'b' are DIFFERENT.
+
+IN PYTHON:
+# Input two characters from the user
+char1 = input("Enter the first character: ")
+char2 = input("Enter the second character: ")
+
+# Check if the characters are the same or different
+if char1 == char2:
+    print(f"The characters '{char1}' and '{char2}' are the SAME.")
+else:
+    print(f"The characters '{char1}' and '{char2}' are DIFFERENT.")
+
+O/P :
+Enter the first character: a
+Enter the second character: a
+The characters 'a' and 'a' are the SAME.
+
+Enter the first character: a
+Enter the second character: b
+The characters 'a' and 'b' are DIFFERENT.
