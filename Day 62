@@ -1,0 +1,46 @@
+day 62 : Discount-20% program 
+
+IN C :
+# Input original price
+original_price = float(input("Enter the original price of the product: "))
+
+# Calculate discount (20% of the original price)
+discount = original_price * 0.20
+
+# Calculate final price after discount
+final_price = original_price - discount
+
+# Display the results
+print(f"Original Price: ${original_price:.2f}")
+print(f"Discount Amount (20%): ${discount:.2f}")
+print(f"Final Price after discount: ${final_price:.2f}")
+
+O/P :
+
+Enter the original price of the product: 100
+Original Price: $100.00
+Discount Amount (20%): $20.00
+Final Price after discount: $80.00
+
+IN PYTHON :
+
+# Input original price
+original_price = float(input("Enter the original price of the product: "))
+
+# Calculate discount (20% of the original price)
+discount = original_price * 0.20
+
+# Calculate final price after discount
+final_price = original_price - discount
+
+# Display the results
+print(f"Original Price: ${original_price:.2f}")
+print(f"Discount Amount (20%): ${discount:.2f}")
+print(f"Final Price after discount: ${final_price:.2f}")
+
+O/P :
+
+Enter the original price of the product: 100
+Original Price: $100.00
+Discount Amount (20%): $20.00
+Final Price after discount: $80.00
