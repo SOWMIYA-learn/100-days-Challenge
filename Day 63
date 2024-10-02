@@ -1,0 +1,69 @@
+day 63 : program to find the middle three characters of a given string
+
+IN C :
+#include <stdio.h>
+#include <string.h>
+
+void middleThree(char str[]) {
+    int len = strlen(str);
+
+    // Check if the string has at least 3 characters and odd length
+    if (len < 3 || len % 2 == 0) {
+        printf("The string should have at least 3 characters and an odd length.\n");
+        return;
+    }
+
+    // Find the middle index
+    int mid = len / 2;
+
+    // Print the middle three characters
+    printf("Middle three characters: %c%c%c\n", str[mid - 1], str[mid], str[mid + 1]);
+}
+
+int main() {
+    char str[100];
+
+    // Input string
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    // Call the function to find and print middle three characters
+    middleThree(str);
+
+    return 0;
+}
+
+O/P :
+Enter a string: example
+Middle three characters: amp
+
+Enter a string: code
+The string should have at least 3 characters and an odd length.
+
+IN PYTHON :
+def middle_three(string):
+    length = len(string)
+
+    # Check if the string has at least 3 characters and odd length
+    if length < 3 or length % 2 == 0:
+        return "The string should have at least 3 characters and an odd length."
+
+    # Find the middle index
+    mid = length // 2
+
+    # Return the middle three characters
+    return string[mid - 1: mid + 2]
+
+# Input string
+string = input("Enter a string: ")
+
+# Output middle three characters
+result = middle_three(string)
+print("Middle three characters:", result)
+
+O/P :
+Enter a string: example
+Middle three characters: amp
+
+Enter a string: code
+The string should have at least 3 characters and an odd length.
