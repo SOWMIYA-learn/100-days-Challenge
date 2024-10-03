@@ -1,0 +1,43 @@
+day 64 : program to print the last four digits of a given number
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    long long number;  // Assuming the number can be large, using long long
+    printf("Enter a number: ");
+    scanf("%lld", &number);
+    
+    // To get the last four digits, we use modulus operator
+    int lastFourDigits = number % 10000;
+    
+    printf("The last four digits are: %04d\n", lastFourDigits);
+    
+    return 0;
+}
+
+O/P :
+
+Enter a number: 123456789
+The last four digits are: 6789
+
+Enter a number: 123
+The last four digits are: 0123
+
+IN PYTHON:
+# Input the number from the user
+number = int(input("Enter a number: "))
+
+# To get the last four digits, use the modulus operator
+last_four_digits = number % 10000
+
+# Print the result with leading zeros if necessary
+print(f"The last four digits are: {last_four_digits:04d}")
+
+O/P : 
+Enter a number: 123456789
+The last four digits are: 6789
+
+Enter a number: 123
+The last four digits are: 0123
+
