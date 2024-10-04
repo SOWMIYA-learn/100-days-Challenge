@@ -1,0 +1,41 @@
+day 65 : length of the string program 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    char str[100];
+    int length = 0;
+
+    // Input a string from the user
+    printf("Enter a string: ");
+    gets(str);  // Using gets() to read the string
+
+    // Loop through the string until the null character is encountered
+    while (str[length] != '\0') {
+        length++;
+    }
+
+    // Output the length of the string
+    printf("Length of the string: %d\n", length);
+
+    return 0;
+}
+
+O/P :
+Enter a string: Hello, World!
+Length of the string: 13
+
+IN PYTHON:
+# Input a string from the user
+user_string = input("Enter a string: ")
+
+# Calculate the length of the string
+length = len(user_string)
+
+# Output the length of the string
+print("Length of the string:", length)
+
+O/P :
+Enter a string: Hello, World!
+Length of the string: 13
