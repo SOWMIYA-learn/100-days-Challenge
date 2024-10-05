@@ -1,0 +1,50 @@
+day 66 : reverse Alphabet triangle pattern 
+
+IN C 
+#include <stdio.h>
+
+int main() {
+    int i, j;
+    char letter = 'A';
+
+    // Loop for rows
+    for (i = 5; i >= 1; i--) {
+        // Loop for printing letters in each row
+        for (j = 1; j <= i; j++) {
+            printf("%c ", letter + j - 1);
+        }
+        printf("\n");  // Move to the next line after each row
+    }
+
+    return 0;
+}
+
+O/P :
+A B C D E 
+A B C D 
+A B C 
+A B 
+A
+
+
+IN PYTHON:
+
+def reverse_alphabet_triangle():
+    letter = 65  # ASCII value of 'A'
+
+    # Loop for rows
+    for i in range(5, 0, -1):
+        # Loop for printing letters in each row
+        for j in range(i):
+            print(chr(letter + j), end=" ")
+        print()  # Move to the next line after each row
+
+reverse_alphabet_triangle()
+
+O/P :
+
+A B C D E 
+A B C D 
+A B C 
+A B 
+A
