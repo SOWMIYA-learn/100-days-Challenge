@@ -1,0 +1,47 @@
+day 68 : N pattern program 
+
+In C
+#include <stdio.h>
+
+int main() {
+    int i, j, N;
+
+    // Input the size of the letter N
+    printf("Enter the size of N: ");
+    scanf("%d", &N);
+
+    for (i = 0; i < N; i++) {
+        for (j = 0; j < N; j++) {
+            // Printing '*' at the boundaries or the diagonal
+            if (j == 0 || j == N - 1 || i == j)
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+IN PYTHON:
+# Input the size of the letter N
+N = int(input("Enter the size of N: "))
+
+# Loop through the rows
+for i in range(N):
+    for j in range(N):
+        # Printing '*' at the boundaries or the diagonal
+        if j == 0 or j == N - 1 or i == j:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()  # Move to the next line after each row
+
+O/P :
+
+*   *
+**  *
+* * *
+*  **
+*   *
