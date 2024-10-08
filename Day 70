@@ -1,0 +1,50 @@
+Day 70 : program that prints an integer border pattern
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int n, i, j;
+
+    printf("Enter the size of the pattern: ");
+    scanf("%d", &n);
+
+    // Loop to print the pattern
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= n; j++) {
+            // Print the border (first/last row or first/last column)
+            if (i == 1 || i == n || j == 1 || j == n) {
+                printf("%d ", j);
+            } else {
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+IN PYTHON :
+# Function to print integer border pattern
+def print_border_pattern(n):
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            # Print the border (first/last row or first/last column)
+            if i == 1 or i == n or j == 1 or j == n:
+                print(j, end=" ")
+            else:
+                print(" ", end=" ")
+        print()
+
+# Input for the size of the pattern
+n = int(input("Enter the size of the pattern: "))
+print_border_pattern(n)
+
+O /P :
+
+1 2 3 4 5 
+1       5 
+1       5 
+1       5 
+1 2 3 4 5
