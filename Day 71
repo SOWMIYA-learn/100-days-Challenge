@@ -1,0 +1,81 @@
+Day 71 : program to print the last K integers from an array of integers:
+
+IN C :
+#include <stdio.h>
+
+void printLastKIntegers(int arr[], int n, int k) {
+    if (k > n) {
+        k = n; // If K is greater than the size of the array, print the whole array
+    }
+    
+    printf("The last %d integers are: ", k);
+    for (int i = n - k; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
+int main() {
+    int n, k;
+    
+    // Enter the size of the array
+    printf("Enter the number of integers: ");
+    scanf("%d", &n);
+    
+    int arr[n];
+    
+    // Input the array elements
+    printf("Enter %d integers:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    
+    // Enter the value of K
+    printf("Enter the value of K: ");
+    scanf("%d", &k);
+    
+    // Call the function to print last K integers
+    printLastKIntegers(arr, n, k);
+    
+    return 0;
+}
+
+O/P :
+Enter the number of integers: 5
+Enter 5 integers:
+1 2 3 4 5
+Enter the value of K: 3
+The last 3 integers are: 3 4 5
+
+IN PYTHON :
+def print_last_k_integers(arr, k):
+    if k > len(arr):
+        k = len(arr)  # If K is greater than the size of the list, print the whole list
+    
+    print(f"The last {k} integers are:", arr[-k:])
+
+# Input the size of the list
+n = int(input("Enter the number of integers: "))
+
+# Input the list of integers
+arr = []
+print(f"Enter {n} integers:")
+for i in range(n):
+    arr.append(int(input()))
+
+# Input the value of K
+k = int(input("Enter the value of K: "))
+
+# Call the function to print last K integers
+print_last_k_integers(arr, k)
+
+O/P :
+Enter the number of integers: 5
+Enter 5 integers:
+1
+2
+3
+4
+5
+Enter the value of K: 3
+The last 3 integers are: [3, 4, 5]
