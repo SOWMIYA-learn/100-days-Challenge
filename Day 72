@@ -1,0 +1,43 @@
+Day 72 : integer triangle pattern 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int rows, i, j;
+    
+    // Asking for the number of rows
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+
+    // Loop to print the pattern
+    for(i = 1; i <= rows; i++) {
+        for(j = 1; j <= i; j++) {
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+IN PYTHON:
+# Asking for the number of rows
+rows = int(input("Enter the number of rows: "))
+
+# Loop to print the pattern
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
+
+O/P :
+
+Enter the number of rows: 5
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5
+
+
