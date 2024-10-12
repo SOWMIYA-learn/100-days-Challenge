@@ -1,0 +1,51 @@
+day 73 -program that prints integers in a right-to-left pattern that looks like the letter "X".
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int n, i, j;
+
+    // Input the size of the X
+    printf("Enter the size of the X: ");
+    scanf("%d", &n);
+
+    // Loop to print the X pattern
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
+            // Print the integer if it's on the diagonal or anti-diagonal
+            if (i == j || i + j == n - 1) {
+                printf("%d", i+1);
+            } else {
+                printf(" ");
+            }
+        }
+        printf("\n"); // Move to the next line after each row
+    }
+
+    return 0;
+}
+
+IN PYTHON:
+# Function to print the X pattern with integers
+def print_integer_x(n):
+    for i in range(n):
+        for j in range(n):
+            # Print the integer if it's on the diagonal or anti-diagonal
+            if i == j or i + j == n - 1:
+                print(i + 1, end="")
+            else:
+                print(" ", end="")
+        print()  # Move to the next line after each row
+
+# Input the size of the X
+n = int(input("Enter the size of the X: "))
+print_integer_x(n)
+
+O/P :
+
+1   1
+ 2 2 
+  3  
+ 4 4 
+5   5
