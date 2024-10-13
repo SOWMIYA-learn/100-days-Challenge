@@ -1,0 +1,62 @@
+Day 74 -program that takes two strings as input and finds the maximum length between them. The program then outputs the length of the longer string and which string it belongs to.
+
+IN C :
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str1[100], str2[100];
+    int len1, len2;
+
+    // Input two strings
+    printf("Enter first string: ");
+    fgets(str1, sizeof(str1), stdin);
+    printf("Enter second string: ");
+    fgets(str2, sizeof(str2), stdin);
+
+    // Remove newline character from the strings
+    str1[strcspn(str1, "\n")] = '\0';
+    str2[strcspn(str2, "\n")] = '\0';
+
+    // Calculate the lengths of the strings
+    len1 = strlen(str1);
+    len2 = strlen(str2);
+
+    // Determine the maximum length and corresponding string
+    if (len1 > len2) {
+        printf("The maximum length is %d, which belongs to string 1: \"%s\"\n", len1, str1);
+    } else if (len2 > len1) {
+        printf("The maximum length is %d, which belongs to string 2: \"%s\"\n", len2, str2);
+    } else {
+        printf("Both strings have the same length of %d.\n", len1);
+    }
+
+    return 0;
+}
+
+O/P :
+Enter first string: Hello World
+Enter second string: C Programming
+The maximum length is 13, which belongs to string 2: "C Programming"
+
+IN PYTHON:
+# Input two strings
+str1 = input("Enter first string: ")
+str2 = input("Enter second string: ")
+
+# Calculate the lengths of the strings
+len1 = len(str1)
+len2 = len(str2)
+
+# Determine the maximum length and corresponding string
+if len1 > len2:
+    print(f"The maximum length is {len1}, which belongs to string 1: \"{str1}\"")
+elif len2 > len1:
+    print(f"The maximum length is {len2}, which belongs to string 2: \"{str2}\"")
+else:
+    print(f"Both strings have the same length of {len1}.")
+
+O/P :
+Enter first string: Hello
+Enter second string: Python Programming
+The maximum length is 18, which belongs to string 2: "Python Programming"
