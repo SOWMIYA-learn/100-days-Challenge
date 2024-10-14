@@ -1,0 +1,54 @@
+Day 75 - program to calculate the sum of even digits in a number
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int number, digit, sum = 0;
+
+    // Input from the user
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    // Loop through each digit
+    while (number != 0) {
+        digit = number % 10;  // Extract the last digit
+
+        // Check if the digit is even
+        if (digit % 2 == 0) {
+            sum += digit;  // Add the even digit to the sum
+        }
+
+        number /= 10;  // Remove the last digit
+    }
+
+    // Output the result
+    printf("Sum of even digits: %d\n", sum);
+
+    return 0;
+}
+
+IN PYTHON :
+# Function to calculate sum of even digits
+def sum_of_even_digits(number):
+    sum_even = 0
+    
+    # Loop through each digit in the number
+    while number != 0:
+        digit = number % 10  # Extract the last digit
+        if digit % 2 == 0:   # Check if the digit is even
+            sum_even += digit  # Add the even digit to the sum
+        number //= 10  # Remove the last digit
+    
+    return sum_even
+
+# Input from the user
+number = int(input("Enter an integer: "))
+
+# Output the result
+print("Sum of even digits:", sum_of_even_digits(number))
+
+O/P :
+Enter an integer: 123456
+
+Sum of even digits: 12
