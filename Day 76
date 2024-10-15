@@ -1,0 +1,49 @@
+Day 76 - program that calculates the sum of numbers between 1 and a given limit where the unit digit is either 3 or 6.
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int limit, sum = 0;
+    
+    // Input the limit
+    printf("Enter the limit: ");
+    scanf("%d", &limit);
+    
+    // Loop through numbers from 1 to the limit
+    for (int i = 1; i <= limit; i++) {
+        int unit_digit = i % 10;
+        
+        // Check if the unit digit is 3 or 6
+        if (unit_digit == 3 || unit_digit == 6) {
+            sum += i;
+        }
+    }
+    
+    // Print the sum
+    printf("Sum of numbers with unit digit 3 or 6 is: %d\n", sum);
+    
+    return 0;
+}
+
+IN PYTHON:
+# Input the limit
+limit = int(input("Enter the limit: "))
+
+# Initialize the sum
+total_sum = 0
+
+# Loop through numbers from 1 to the limit
+for i in range(1, limit + 1):
+    unit_digit = i % 10
+    
+    # Check if the unit digit is 3 or 6
+    if unit_digit == 3 or unit_digit == 6:
+        total_sum += i
+
+# Print the sum
+print("Sum of numbers with unit digit 3 or 6 is:", total_sum)
+
+O/P :
+Enter the limit: 30
+Sum of numbers with unit digit 3 or 6 is: 84
