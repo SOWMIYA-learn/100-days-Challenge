@@ -1,0 +1,57 @@
+Day 77 - program to calculate the inverse of a given fraction
+
+IN C :
+#include <stdio.h>
+
+// Function to find the inverse of a fraction
+void inverseFraction(int numerator, int denominator) {
+    // Check for zero denominator
+    if (denominator == 0) {
+        printf("Invalid input: Denominator cannot be zero.\n");
+        return;
+    }
+
+    printf("The inverse of the fraction %d/%d is: %d/%d\n", numerator, denominator, denominator, numerator);
+}
+
+int main() {
+    int num, den;
+
+    // Input the fraction
+    printf("Enter the numerator: ");
+    scanf("%d", &num);
+
+    printf("Enter the denominator: ");
+    scanf("%d", &den);
+
+    // Find and display the inverse
+    inverseFraction(num, den);
+
+    return 0;
+}
+
+O/P :
+Enter the numerator: 3
+Enter the denominator: 4
+The inverse of the fraction 3/4 is: 4/3
+
+IN PYTHON:
+# Function to find the inverse of a fraction
+def inverse_fraction(numerator, denominator):
+    # Check for zero denominator
+    if denominator == 0:
+        return "Invalid input: Denominator cannot be zero."
+    return f"The inverse of the fraction {numerator}/{denominator} is: {denominator}/{numerator}"
+
+# Input the fraction
+num = int(input("Enter the numerator: "))
+den = int(input("Enter the denominator: "))
+
+# Find and display the inverse
+result = inverse_fraction(num, den)
+print(result)
+
+O/P :
+Enter the numerator: 5
+Enter the denominator: 7
+The inverse of the fraction 5/7 is: 7/5
