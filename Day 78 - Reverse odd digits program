@@ -1,0 +1,70 @@
+Day 78 -program to reverse the odd digits of an integer:
+
+IN C :
+#include <stdio.h>
+
+// Function to reverse odd digits
+int reverseOddDigits(int num) {
+    int reversedNum = 0;
+    int lastDigit;
+    
+    while (num > 0) {
+        lastDigit = num % 10;
+        
+        // Check if the digit is odd
+        if (lastDigit % 2 != 0) {
+            reversedNum = reversedNum * 10 + lastDigit;
+        }
+        
+        num /= 10;
+    }
+    
+    return reversedNum;
+}
+
+int main() {
+    int num, result;
+
+    // Input number from user
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    result = reverseOddDigits(num);
+
+    printf("Reversed odd digits: %d\n", result);
+
+    return 0;
+}
+
+O/P :
+Enter an integer: 123456789
+Reversed odd digits: 97531
+
+IN PYTHON:
+def reverse_odd_digits(num):
+    # Convert the number to a string to access individual digits
+    num_str = str(num)
+    odd_digits = []
+
+    # Collect the odd digits
+    for digit in num_str:
+        if int(digit) % 2 != 0:
+            odd_digits.append(digit)
+    
+    # Reverse the odd digits and join them back into a string
+    reversed_odd_digits = ''.join(odd_digits[::-1])
+    
+    # Return the reversed odd digits as an integer
+    return int(reversed_odd_digits) if reversed_odd_digits else 0
+
+# Input number from user
+num = int(input("Enter an integer: "))
+
+# Get the reversed odd digits
+result = reverse_odd_digits(num)
+
+print("Reversed odd digits:", result)
+
+O/P :
+Enter an integer: 123456789
+Reversed odd digits: 97531
