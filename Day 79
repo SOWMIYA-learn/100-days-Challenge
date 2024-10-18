@@ -1,0 +1,54 @@
+Day 79 : String without space program 
+
+IN C :
+#include <stdio.h>
+
+void removeSpaces(char *str) {
+    int i = 0, j = 0;
+    
+    // Loop through each character of the string
+    while (str[i]) {
+        // If the character is not a space, copy it to the next position
+        if (str[i] != ' ') {
+            str[j++] = str[i];
+        }
+        i++;
+    }
+    str[j] = '\0';  // Terminate the modified string with null character
+}
+
+int main() {
+    char str[100];
+    
+    // Input a string
+    printf("Enter a string: ");
+    fgets(str, 100, stdin);  // Use fgets to capture input with spaces
+
+    // Remove spaces from the string
+    removeSpaces(str);
+    
+    // Output the modified string
+    printf("String without spaces: %s\n", str);
+    
+    return 0;
+}
+
+O/P :
+Enter a string: Hello World
+String without spaces: HelloWorld
+
+IN PYTHON:
+# Function to remove spaces from a string
+def remove_spaces(string):
+    return string.replace(" ", "")
+
+# Input a string from the user
+user_input = input("Enter a string: ")
+
+# Remove spaces and display the result
+result = remove_spaces(user_input)
+print("String without spaces:", result)
+
+O/P:
+Enter a string: Hello World
+String without spaces: HelloWorld
