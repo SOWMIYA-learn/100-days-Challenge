@@ -1,0 +1,55 @@
+Day 80 - Here's a simple C program to count the occurrences of string S2 in string S1:
+
+IN C :
+#include <stdio.h>
+#include <string.h>
+
+int countOccurrences(char *s1, char *s2) {
+    int count = 0;
+    int len1 = strlen(s1);
+    int len2 = strlen(s2);
+    
+    for (int i = 0; i <= len1 - len2; i++) {
+        if (strncmp(&s1[i], s2, len2) == 0) {
+            count++;
+        }
+    }
+    return count;
+}
+
+int main() {
+    char s1[100], s2[100];
+    
+    printf("Enter string S1: ");
+    gets(s1);  // Reading input for string S1
+    printf("Enter string S2: ");
+    gets(s2);  // Reading input for string S2
+    
+    int result = countOccurrences(s1, s2);
+    printf("Count of '%s' in '%s' is: %d\n", s2, s1, result);
+    
+    return 0;
+}
+
+Example Output:
+Enter string S1: hello hello world hello
+Enter string S2: hello
+Count of 'hello' in 'hello hello world hello' is: 3
+
+IN PYTHON:
+def count_occurrences(s1, s2):
+    return s1.count(s2)
+
+# Main program
+s1 = input("Enter string S1: ")
+s2 = input("Enter string S2: ")
+
+result = count_occurrences(s1, s2)
+print(f"Count of '{s2}' in '{s1}' is: {result}")
+
+O/P :
+Enter string S1: hello hello world hello
+Enter string S2: hello
+Count of 'hello' in 'hello hello world hello' is: 3
+
+
