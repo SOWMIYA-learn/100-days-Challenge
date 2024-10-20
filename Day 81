@@ -1,0 +1,42 @@
+Day 81 - program that prints two digits, X and Y, based on user input
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int X, Y;
+    
+    // Prompt the user to enter two digits
+    printf("Enter two digits:\n");
+    
+    // Reading values for X and Y
+    printf("Enter X: ");
+    scanf("%d", &X);
+    
+    printf("Enter Y: ");
+    scanf("%d", &Y);
+    
+    // Printing the digits X and Y
+    printf("The digits you entered are: X = %d, Y = %d\n", X, Y);
+    
+    return 0;
+}
+
+O/P :
+Enter two digits:
+Enter X: 3
+Enter Y: 7
+The digits you entered are: X = 3, Y = 7
+
+IN PYTHON:
+# Prompt the user to enter two digits
+X = int(input("Enter X: "))
+Y = int(input("Enter Y: "))
+
+# Printing the digits X and Y
+print(f"The digits you entered are: X = {X}, Y = {Y}")
+
+O/P :
+Enter X: 3
+Enter Y: 7
+The digits you entered are: X = 3, Y = 7
