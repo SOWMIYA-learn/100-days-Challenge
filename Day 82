@@ -1,0 +1,70 @@
+Day 82 - Reverse Even Integers 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int n, i, j = 0;
+    
+    // Input size of the array
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+    
+    int arr[n], even[n]; // Array to hold elements and even numbers
+    
+    // Input elements into the array
+    printf("Enter the elements:\n");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+        if (arr[i] % 2 == 0) {
+            even[j++] = arr[i];  // Store even numbers in a separate array
+        }
+    }
+    
+    // Output even integers in reverse order
+    printf("Even integers in reverse order:\n");
+    for (i = j - 1; i >= 0; i--) {
+        printf("%d ", even[i]);
+    }
+    
+    return 0;
+}
+
+O/P :
+Enter the number of elements: 6
+Enter the elements:
+12 3 8 7 6 5
+Even integers in reverse order:
+6 8 12
+
+IN PYTHON:
+# Input: list of integers
+n = int(input("Enter the number of elements: "))
+arr = []
+
+# Reading elements into the list
+print("Enter the elements:")
+for i in range(n):
+    element = int(input())
+    arr.append(element)
+
+# Filtering even numbers and reversing them
+even_numbers = [x for x in arr if x % 2 == 0]
+even_numbers.reverse()
+
+# Output: Even integers in reverse order
+print("Even integers in reverse order:")
+for num in even_numbers:
+    print(num, end=" ")
+
+O/P :
+Enter the number of elements: 6
+Enter the elements:
+12
+3
+8
+7
+6
+5
+Even integers in reverse order:
+6 8 12
