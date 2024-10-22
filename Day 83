@@ -1,0 +1,46 @@
+Day 83 - First 10 multiples of X and Y
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int X, Y;
+    
+    // Asking user to input the values for X and Y
+    printf("Enter the value of X: ");
+    scanf("%d", &X);
+    
+    printf("Enter the value of Y: ");
+    scanf("%d", &Y);
+    
+    printf("First 10 multiples of %d: ", X);
+    for (int i = 1; i <= 10; i++) {
+        printf("%d ", X * i);
+    }
+    
+    printf("\nFirst 10 multiples of %d: ", Y);
+    for (int i = 1; i <= 10; i++) {
+        printf("%d ", Y * i);
+    }
+    
+    return 0;
+}
+
+IN PYTHON :
+# Asking user to input the values for X and Y
+X = int(input("Enter the value of X: "))
+Y = int(input("Enter the value of Y: "))
+
+print(f"First 10 multiples of {X}: ", end="")
+for i in range(1, 11):
+    print(X * i, end=" ")
+
+print(f"\nFirst 10 multiples of {Y}: ", end="")
+for i in range(1, 11):
+    print(Y * i, end=" ")
+
+O/P :
+Enter the value of X: 3
+Enter the value of Y: 5
+First 10 multiples of 3: 3 6 9 12 15 18 21 24 27 30 
+First 10 multiples of 5: 5 10 15 20 25 30 35 40 45 50
