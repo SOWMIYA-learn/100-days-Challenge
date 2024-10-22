@@ -1,0 +1,111 @@
+Day 84 -program that reads numbers from the user, sorts them based on their unit digits in ascending and descending order, and then displays the sorted numbers.
+
+IN C :
+#include <stdio.h>
+
+void sortAscending(int arr[], int n) {
+    int i, j, temp;
+    for (i = 0; i < n - 1; i++) {
+        for (j = 0; j < n - i - 1; j++) {
+            if (arr[j] % 10 > arr[j + 1] % 10) {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+
+void sortDescending(int arr[], int n) {
+    int i, j, temp;
+    for (i = 0; i < n - 1; i++) {
+        for (j = 0; j < n - i - 1; j++) {
+            if (arr[j] % 10 < arr[j + 1] % 10) {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+
+void printArray(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
+int main() {
+    int n, i;
+    
+    // Get the number of elements from user
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+    
+    int arr[n];
+    
+    // Input the numbers
+    printf("Enter the numbers:\n");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    
+    // Sort by unit digit in ascending order
+    sortAscending(arr, n);
+    printf("Sorted in ascending order by unit digit: ");
+    printArray(arr, n);
+    
+    // Sort by unit digit in descending order
+    sortDescending(arr, n);
+    printf("Sorted in descending order by unit digit: ");
+    printArray(arr, n);
+    
+    return 0;
+}
+
+O/P :
+Enter the number of elements: 5
+Enter the numbers:
+12 43 56 89 23
+Sorted in ascending order by unit digit: 12 43 23 56 89 
+Sorted in descending order by unit digit: 89 56 23 43 12
+
+IN PYTHON:
+def sort_ascending(arr):
+    return sorted(arr, key=lambda x: x % 10)
+
+def sort_descending(arr):
+    return sorted(arr, key=lambda x: x % 10, reverse=True)
+
+def main():
+    # Get the number of elements from user
+    n = int(input("Enter the number of elements: "))
+    
+    # Input the numbers
+    arr = []
+    print("Enter the numbers:")
+    for _ in range(n):
+        arr.append(int(input()))
+    
+    # Sort by unit digit in ascending order
+    asc_sorted = sort_ascending(arr)
+    print("Sorted in ascending order by unit digit:", asc_sorted)
+    
+    # Sort by unit digit in descending order
+    desc_sorted = sort_descending(arr)
+    print("Sorted in descending order by unit digit:", desc_sorted)
+
+if __name__ == "__main__":
+    main()
+
+O/P :
+Enter the number of elements: 5
+Enter the numbers:
+12
+43
+56
+89
+23
+Sorted in ascending order by unit digit: [12, 43, 23, 56, 89]
+Sorted in descending order by unit digit: [89, 56, 43, 23, 12]
