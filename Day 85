@@ -1,0 +1,33 @@
+Day 85 - to find the element at the Xth position in an array:
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int arr[] = {10, 20, 30, 40, 50}; // Sample array
+    int X;
+
+    printf("Enter the position: ");
+    scanf("%d", &X);
+
+    if(X > 0 && X <= sizeof(arr)/sizeof(arr[0])) {
+        printf("Element at position %d is %d\n", X, arr[X-1]);
+    } else {
+        printf("Invalid position\n");
+    }
+
+    return 0;
+}
+
+IN PYTHON:
+arr = [10, 20, 30, 40, 50]  # Sample list
+X = int(input("Enter the position: "))
+
+if 1 <= X <= len(arr):
+    print(f"Element at position {X} is {arr[X-1]}")
+else:
+    print("Invalid position")
+
+O/P :
+Enter the position: 3
+Element at position 3 is 30
