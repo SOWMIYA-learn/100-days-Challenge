@@ -1,0 +1,18 @@
+Day 86 - print all 2 digit Numbers 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    for (int i = 10; i <= 99; i++) {
+        printf("%d ", i);
+    }
+    return 0;
+}
+
+IN PYTHON :
+for i in range(10, 100):
+    print(i, end=" ")
+
+O/P :
+10 11 12 13 14 15 ... 99
