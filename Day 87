@@ -1,0 +1,80 @@
+Day 87 - program to reverse N integers
+
+IN C :
+#include <stdio.h>
+
+void reverseArray(int arr[], int n) {
+    int start = 0, end = n - 1;
+    while (start < end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+}
+
+int main() {
+    int n;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+    
+    int arr[n];
+    printf("Enter %d integers:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    reverseArray(arr, n);
+
+    printf("Reversed array:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+
+O/P :
+Enter the number of elements: 5
+Enter 5 integers:
+1
+2
+3
+4
+5
+Reversed array:
+5 4 3 2 1
+
+IN PYTHON:
+def reverse_array(arr):
+    return arr[::-1]
+
+# Input the number of elements
+n = int(input("Enter the number of elements: "))
+
+# Input the elements
+arr = []
+print(f"Enter {n} integers:")
+for _ in range(n):
+    num = int(input())
+    arr.append(num)
+
+# Reverse the array
+reversed_arr = reverse_array(arr)
+
+# Display the reversed array
+print("Reversed array:")
+print(" ".join(map(str, reversed_arr)))
+
+O/P :
+Enter the number of elements: 5
+Enter 5 integers:
+1
+2
+3
+4
+5
+Reversed array:
+5 4 3 2 1
