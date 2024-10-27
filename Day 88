@@ -1,0 +1,30 @@
+Day 88 - product the 1st and last digit of a number program 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int num, first, last;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    last = num % 10;          // Get the last digit
+    while (num >= 10) {       // Find the first digit
+        num /= 10;
+    }
+    first = num;
+
+    printf("Product of first and last digit: %d\n", first * last);
+    return 0;
+}
+
+IN PYTHON:
+num = int(input("Enter a number: "))
+first = int(str(num)[0])
+last = num % 10
+print("Product of first and last digit:", first * last)
+
+O/P :
+Enter a number: 2534
+Product of first and last digit: 8
