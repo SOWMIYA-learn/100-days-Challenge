@@ -1,0 +1,21 @@
+DAY 89 - 2 power X program 
+
+IN C :
+#include <stdio.h>
+int main() {
+    int x;
+    printf("Enter x: ");
+    scanf("%d", &x);
+    int result = 1 << x;
+    printf("2^%d = %d\n", x, result);
+    return 0;
+}
+
+IN PYTHON:
+x = int(input("Enter x: "))
+result = 2 ** x
+print(f"2^{x} = {result}")
+
+O/P :
+Enter x: 3
+2^3 = 8
