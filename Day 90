@@ -1,0 +1,24 @@
+Day 90 - sum last three digits 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int num, sum;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    sum = (num % 10) + (num / 10 % 10) + (num / 100 % 10);
+
+    printf("Sum of last three digits: %d\n", sum);
+    return 0;
+}
+
+IN PYTHON :
+num = int(input("Enter a number: "))
+sum_last_three = sum(int(digit) for digit in str(num)[-3:])
+print("Sum of last three digits:", sum_last_three)
+
+O/P :
+Enter a number: 12345
+Sum of last three digits: 12
