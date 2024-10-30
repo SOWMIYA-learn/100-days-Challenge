@@ -1,0 +1,25 @@
+Day 91 - predecessor and Successor 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int x;
+    printf("Enter a number: ");
+    scanf("%d", &x);
+
+    printf("Predecessor of %d is %d\n", x, x - 1);
+    printf("Successor of %d is %d\n", x, x + 1);
+
+    return 0;
+}
+
+IN PYTHON : 
+x = int(input("Enter a number: "))
+print("Predecessor of", x, "is", x - 1)
+print("Successor of", x, "is", x + 1)
+
+O/P :
+Enter a number: 10
+Predecessor of 10 is 9
+Successor of 10 is 11
