@@ -1,0 +1,42 @@
+Day 92 - find the elements program 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int arr[] = {2, 4, 6, 8, 10};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int x, found = 0;
+    
+    printf("Enter the element to find: ");
+    scanf("%d", &x);
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == x) {
+            printf("Element %d found at index %d\n", x, i);
+            found = 1;
+            break;
+        }
+    }
+    
+    if (!found)
+        printf("Element %d not found\n", x);
+
+    return 0;
+}
+
+IN PYTHON:
+arr = [2, 4, 6, 8, 10]
+x = int(input("Enter the element to find: "))
+
+if x in arr:
+    print(f"Element {x} found at index {arr.index(x)}")
+else:
+    print(f"Element {x} not found")
+
+O/P :
+Enter the element to find: 8
+Element 8 found at index 3
+
+Enter the element to find: 5
+Element 5 not found
