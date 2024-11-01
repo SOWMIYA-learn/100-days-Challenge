@@ -1,0 +1,38 @@
+Day - 93 , string reversal program 
+
+IN C :
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[100], temp;
+    int i, j;
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    // Calculate string length
+    int len = strlen(str);
+
+    // Reverse the string
+    for (i = 0, j = len - 1; i < j; i++, j--) {
+        temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
+    }
+
+    printf("Reversed string: %s\n", str);
+
+    return 0;
+}
+
+IN PYTHON:
+# Get user input
+string = input("Enter a string: ")
+
+# Reverse the string and display it
+print("Reversed string:", string[::-1])
+
+O/P :
+Enter a string: hello
+Reversed string: olleh
