@@ -1,0 +1,45 @@
+Day 94 - Consonants in first X characters 
+
+IN C :
+#include <stdio.h>
+#include <ctype.h>
+
+int countConsonants(char str[], int x) {
+    int count = 0;
+    for (int i = 0; i < x && str[i] != '\0'; i++) {
+        char ch = tolower(str[i]);
+        if (ch >= 'a' && ch <= 'z' && !(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'))
+            count++;
+    }
+    return count;
+}
+
+int main() {
+    char str[100];
+    int x;
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    printf("Enter the number of characters (X): ");
+    scanf("%d", &x);
+
+    int consonants = countConsonants(str, x);
+    printf("Consonants in the first %d characters: %d\n", x, consonants);
+
+    return 0;
+}
+
+IN PYTHON :
+def count_consonants(s, x):
+    vowels = 'aeiouAEIOU'
+    return sum(1 for char in s[:x] if char.isalpha() and char not in vowels)
+
+s = input("Enter a string: ")
+x = int(input("Enter the number of characters (X): "))
+print("Consonants in the first", x, "characters:", count_consonants(s, x))
+
+O/P :
+Enter a string: Inevitable suffering 
+Enter the number of characters (X): 5
+Consonants in the first 5 characters: 2
