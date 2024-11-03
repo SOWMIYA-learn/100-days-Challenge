@@ -1,0 +1,26 @@
+Day 95 - previous and next alphabets 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    char ch;
+    printf("Enter an alphabet: ");
+    scanf("%c", &ch);
+
+    printf("Previous alphabet: %c\n", ch - 1);
+    printf("Next alphabet: %c\n", ch + 1);
+
+    return 0;
+}
+
+IN PYTHON:
+ch = input("Enter an alphabet: ")
+
+print("Previous alphabet:", chr(ord(ch) - 1))
+print("Next alphabet:", chr(ord(ch) + 1))
+
+O/P :
+Enter an alphabet: b
+Previous alphabet: a
+Next alphabet: c
