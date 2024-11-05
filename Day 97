@@ -1,0 +1,49 @@
+Day 97 - Remove special characters 
+
+IN C :
+#include <stdio.h>
+#include <ctype.h>
+
+void removeSpecialChars(char *str) {
+    int i, j = 0;
+    for (i = 0; str[i] != '\0'; i++) {
+        if (isalnum(str[i])) { // Check if the character is alphanumeric
+            str[j++] = str[i];
+        }
+    }
+    str[j] = '\0'; // Null-terminate the result
+}
+
+int main() {
+    char str[100];
+    printf("Enter a string: ");
+    gets(str);
+
+    removeSpecialChars(str);
+    printf("String after removing special characters: %s\n", str);
+
+    return 0;
+}
+
+IN PYTHON :
+import re
+
+def remove_special_chars(text):
+    return re.sub(r'[^a-zA-Z0-9]', '', text)
+
+# Input
+text = input("Enter a string: ")
+# Output
+print("String after removing special characters:", remove_special_chars(text))
+
+O/P :
+Output
+
+Input:
+Enter a string: Hello@World!123
+
+Output:
+String after removing special characters: HelloWorld123
+
+
+
