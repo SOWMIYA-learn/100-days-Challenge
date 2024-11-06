@@ -1,0 +1,27 @@
+Day 98 - Smallest to Largest integer program 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    int a, b, c, temp;
+    
+    printf("Enter three integers: ");
+    scanf("%d %d %d", &a, &b, &c);
+    
+    if (a > b) { temp = a; a = b; b = temp; }
+    if (a > c) { temp = a; a = c; c = temp; }
+    if (b > c) { temp = b; b = c; c = temp; }
+    
+    printf("Sorted order: %d %d %d\n", a, b, c);
+    return 0;
+}
+
+IN PYTHON :
+nums = list(map(int, input("Enter three integers: ").split()))
+nums.sort()
+print("Sorted order:", *nums)
+
+O/P :
+Enter three integers: 3 1 2
+Sorted order: 1 2 3
