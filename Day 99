@@ -1,0 +1,18 @@
+Day 99- print all vowels program 
+
+IN C :
+#include <stdio.h>
+
+int main() {
+    char vowels[] = "AEIOUaeiou";
+    printf("Vowels: %s\n", vowels);
+    return 0;
+}
+
+IN PYTHON:
+vowels = "AEIOUaeiou"
+print("Vowels:", vowels)
+
+O/P :
+Vowels: AEIOUaeiou
+
