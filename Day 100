@@ -1,0 +1,25 @@
+Day 100 - First two and last two program 
+
+IN C :
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[] = "HelloWorld";
+    int len = strlen(str);
+
+    // Print first two characters
+    printf("%c%c", str[0], str[1]);
+    
+    // Print last two characters
+    printf("%c%c\n", str[len - 2], str[len - 1]);
+
+    return 0;
+}
+
+IN PYTHON:
+str = "HelloWorld"
+print(str[:2] + str[-2:])
+
+O/P :
+Held
