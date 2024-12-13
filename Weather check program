@@ -1,0 +1,40 @@
+
+
+import java.util.Scanner;
+
+public class WeatherApp {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Prompt user to enter the temperature
+        System.out.print("Enter the temperature (in °C): ");
+        double temperature = scanner.nextDouble();
+        
+        // Determine the weather condition
+        String weather;
+        if (temperature < 10) {
+            weather = "Cold";
+        } else if (temperature >= 10 && temperature < 25) {
+            weather = "Pleasant";
+        } else if (temperature >= 25 && temperature < 35) {
+            weather = "Warm";
+        } else {
+            weather = "Hot";
+        }
+        
+        // Display the conclusion
+        System.out.println("The temperature is " + temperature + "°C.");
+        System.out.println("Today's weather is: " + weather);
+        
+        scanner.close();
+    }
+}
+
+O/P :
+Enter the temperature (in °C): 15
+The temperature is 15.0°C.
+Today's weather is: Pleasant
+
+Enter the temperature (in °C): 30
+The temperature is 30.0°C.
+Today's weather is: Warm
