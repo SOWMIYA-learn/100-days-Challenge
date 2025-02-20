@@ -1,0 +1,28 @@
+
+
+def unique_pattern(n):
+    for i in range(1, n + 1, 2):
+        print(" " * ((n - i) // 2) + "".join(str(j) for j in range(1, i + 1)))
+
+    for i in range(n - 2, 0, -2):
+        print(" " * ((n - i) // 2) + "".join(str(j) for j in range(1, i + 1)))
+
+# Example Usage
+n = 7  # Adjust this value for different sizes
+unique_pattern(n)
+
+O/P:
+
+
+n=7
+
+   1
+  123
+ 12345
+1234567
+ 12345
+  123
+   1
+
+
+
